@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    line-height: 1.7;
+
+    background: linear-gradient(
+        90deg,
+        #0000fe 0%,
+        #0000fe 45%,
+        #f00000 55%,
+        #f00000 100%
+    );
+}
+
+header{
+    background: linear-gradient(
+        to right,
+        #0000fe,
+        #f00000
+    );
+
+    color: white;
+}
+
+nav{
+
+    margin-top:20px;
+    text-align: center;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    text-align: center;
+
+}
+
+main{
+
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+
+}
+
+section {
+    background: rgba(15, 15, 15, 0.75);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+h2{
+
+    margin-bottom:15px;
+
+}
+
+#profile img{
+
+    width:200px;
+    border-radius:50%;
+    display:block;
+    margin:20px auto;
+
+}
+
+.gallery{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 2px solid #333;
+
+    transition: 0.3s;
+
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.image-number {
+    margin-top: 8px;
+
+    color: #dddddd;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    background: #181818;
+    color: #fff;
+    border: none;
+
+    border-left: 4px solid #2d8cff;
+    border-right: 4px solid #b32020;
+
+    width: 100%;
+    padding: 12px;
+}
+
+textarea{
+
+    height:180px;
+
+}
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #0b1f3a,
+        #3a0b0b
+    );
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    transform: scale(1.03);
+
+    transition: .2s;
+
+    box-shadow: 0 0 20px rgba(255,255,255,.2);
+
+}
+
+footer{
+    background: linear-gradient(
+        to right,
+        #0b1f3a,
+        #3a0b0b
+    );
+
+    color: white;
+}
